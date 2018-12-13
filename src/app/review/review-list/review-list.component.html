@@ -1,0 +1,15 @@
+
+
+<ul *ngIf="reviews">
+  <div *ngFor="let review of reviews">
+
+
+    <h1>id: {{review.id}}</h1>
+
+    <h2> commento: {{review.comment}} </h2>
+
+    <h3> my dicc size {{review.rating}} </h3>
+  </div>
+</ul>
+
+<h4 *ngIf=" !reviews">Loading ...</h4>
